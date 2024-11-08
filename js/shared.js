@@ -1,24 +1,32 @@
-// console.log("shared js work nicely");
-function getInputElementById(id){
-   const inputvalue=document.getElementById(id).value;
-    const inputvalueNumber=parseFloat(inputvalue);
+
+// For InputFiedl Function
+function getInputElementById(id) {
+    const inputvalue = document.getElementById(id).value;
+    const inputvalueNumber = parseFloat(inputvalue);
     return inputvalueNumber;
 }
-function FormateCurrency(amount){
+
+// For toxid function
+
+function FormateCurrency(amount) {
     return '${amount.fofixed(2)}';
 }
 
-// function getTextFieldid(id){
-//     const
-// }
+// for TexttField function
+
+function getTextFieldid(id) {
+    const textinputvaleu = document.getElementById(id).innerText;
+    const textinputvalueNumber = parseFloat(textinputvaleu);
+    return textinputvalueNumber;
+}
 
 // hidden remove function
-function hiddeRemove(id){
+function hiddeRemove(id) {
     document.getElementById(id).classList.remove(id);
 }
 // hidden add function
 
-function hiddenAdd(id){
+function hiddenAdd(id) {
     document.getElementById(id).classList.add(id);
 }
 
@@ -26,3 +34,17 @@ function hiddenAdd(id){
 // function showHistory(element name ){
 
 // }
+
+// function DonatenowButton(id)
+// .addEventListener('click',function{
+
+    
+// })
+
+// card-1-input-validation
+
+function InputValidation(id){
+    const inputvlaue=document.getElementById(id).value;
+    const inputvalueNumber=parseFloat(inputvlaue);
+    return inputvalueNumber;
+}
