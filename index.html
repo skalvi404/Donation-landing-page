@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
 
 
-<!-- Tailwind and Daisy UI CDN -->
+    <!-- Tailwind and Daisy UI CDN -->
     <!-- Google Fonts CDN -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<!-- font-awosome CDN -->
-<script src="https://kit.fontawesome.com/de163cd3b9.js" crossorigin="anonymous"></script>
-<!-- Daisy Ui CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font-awosome CDN -->
+    <script src="https://kit.fontawesome.com/de163cd3b9.js" crossorigin="anonymous"></script>
+    <!-- Daisy Ui CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -44,29 +45,23 @@
 
 
 </head>
+
 <body class="bg-background_clr font-sans">
+    <nav>
+        <div class="navbar flex justify-center gap-80">
+            <div>
+                <a class="btn btn-sm btn-light_color bg-primary">Blog</a>
+            </div>
+            <div class="gap-3">
 
-    <!-- Header -->
-    <!-- <header class="bg-background_clr p-4  flex justify-around">
-        <div class="flex items-center space-x-4">
-            <button class="btn btn-sm bg-primary">Blog</button>
-           <h1 class="text-xl font-bold gap-44 text-gray-800">Donate Bangladesh</h1>
+                <span><img src="../assets/logo.png" width="25px"></span>
+                <span>Donate Bangladesh</span>
+            </div>
+            <div class="text-yellow-500 font-semibold text-lg">৳500 BDT</div>
         </div>
-        <div class="text-yellow-500 font-semibold text-lg">৳500 BDT</div>
-    </header> -->
 
-    <div class="navbar flex justify-between">
-        <div class="navbar-start">
-          <a class="btn btn-sm text-xl">daisyUI</a>
-        </div>
-        <div class="navbar-center">
-           <a href="#">Donate Bangladesh</a>
-        </div>
-        
-        <div class="navbar-end">
-          <a class="btn">Button</a>
-        </div>
-      </div>
+    </nav>
+
 
     <!-- Main Content -->
     <div class="max-w-4xl mx-auto mt-8 p-4">
@@ -80,48 +75,68 @@
         <!-- Donation Cards -->
         <div class="space-y-6">
             <!-- Card 1 -->
-            <div class="card bg-white shadow-lg border rounded-lg overflow-hidden">
-                <figure>
-                    <img src="https://via.placeholder.com/600x300" alt="Flood Relief Image" class="w-full h-48 object-cover">
-                </figure>
-                <div class="card-body p-6">
-                    <div class="flex items-center space-x-2 mb-2">
-                        <span class="badge badge-warning">500 BDT</span>
+            <div class="card bg-white-200 shadow-lg border rounded-lg p-5">
+                <div class="flex">
+
+                    <div class="w-full h-10 object-cover py-10">
+                        <img src="../assets/noakhali.png" alt="Flood Relief Image">
                     </div>
-                    <h2 class="card-title text-lg font-semibold text-gray-800">Donate for Flood of Noakhali, Bangladesh</h2>
-                    <p class="text-gray-600 text-sm mt-2">Severe floods in Noakhali have displaced thousands of people, making this an urgent relief effort. Your support can help provide necessary resources to affected families.</p>
-                    <p class="text-gray-500 text-xs mt-2"><strong>Media Coverage:</strong> BDNews24</p>
-                    <button class="btn btn-primary w-full mt-4">Donate Now</button>
+                    <div class="card-body p-5 mb-1">
+                        <div class="flex items-center space-x-2 mb-[-1.5rem]">
+                            <div class="py-5 btn-noakhali">
+                                <button class="btn btn-sm"><img src="../assets/coin.png" height="390px" alt=""
+                                        srcset=""> 0 BDT</button>
+
+                            </div>
+
+                        </div>
+
+                        <h2 class="text-lg font-semibold text-gray-800">Donate for Flood of Noakhali, Bangladesh</h2>
+                        <p class="text-gray-600 text-sm">Severe floods in Noakhali have displaced thousands of people,
+                            making this an urgent relief effort. Your support can help provide necessary resources to
+                            affected families.</p>
+                        <input type="text" placeholder="Type here" class="input h-10" />
+
+                        <button class="btn bg-primary w-full mt-4 h-10">Donate Now</button>
+                    </div>
+
                 </div>
+
             </div>
 
             <!-- Card 2 -->
             <div class="card bg-white shadow-lg border rounded-lg overflow-hidden">
                 <figure>
-                    <img src="https://via.placeholder.com/600x300" alt="Flood Relief Image" class="w-full h-48 object-cover">
+                    <img src="https://via.placeholder.com/600x300" alt="Flood Relief Image"
+                        class="w-full h-48 object-cover">
                 </figure>
                 <div class="card-body p-6">
                     <div class="flex items-center space-x-2 mb-2">
                         <span class="badge badge-warning">500 BDT</span>
                     </div>
-                    <h2 class="card-title text-lg font-semibold text-gray-800">Donate for Flood Relief in Feni, Bangladesh</h2>
-                    <p class="text-gray-600 text-sm mt-2">Floods in Feni have left many without shelter, food, and basic supplies. Your contribution can provide essential aid to those in need.</p>
-                    <p class="text-gray-500 text-xs mt-2"><strong>Media Coverage:</strong> Prothom Alo</p>
-                    <button class="btn btn-success w-full mt-4">Donate Now</button>
+                    <h2 class="card-title text-lg font-semibold text-gray-800">Donate for Flood Relief in Feni,
+                        Bangladesh</h2>
+                    <p class="text-gray-600 text-sm mt-2">Floods in Feni have left many without shelter, food, and basic
+                        supplies. Your contribution can provide essential aid to those in need.</p>
+
+                    <button class="btn btn-primary w-full mt-4">Donate Now</button>
                 </div>
             </div>
 
             <!-- Card 3 -->
             <div class="card bg-white shadow-lg border rounded-lg overflow-hidden">
                 <figure>
-                    <img src="https://via.placeholder.com/600x300" alt="Flood Relief Image" class="w-full h-48 object-cover">
+                    <img src="https://via.placeholder.com/600x300" alt="Flood Relief Image"
+                        class="w-full h-48 object-cover">
                 </figure>
                 <div class="card-body p-6">
                     <div class="flex items-center space-x-2 mb-2">
                         <span class="badge badge-warning">500 BDT</span>
                     </div>
-                    <h2 class="card-title text-lg font-semibold text-gray-800">Aid for Injured in the Garos Movement</h2>
-                    <p class="text-gray-600 text-sm mt-2">Supporting those affected by recent disturbances in the Garo community. Your donation can help provide medical aid and resources to those affected.</p>
+                    <h2 class="card-title text-lg font-semibold text-gray-800">Aid for Injured in the Garos Movement
+                    </h2>
+                    <p class="text-gray-600 text-sm mt-2">Supporting those affected by recent disturbances in the Garo
+                        community. Your donation can help provide medical aid and resources to those affected.</p>
                     <p class="text-gray-500 text-xs mt-2"><strong>Media Coverage:</strong> Dhaka Tribune</p>
                     <button class="btn btn-success w-full mt-4">Donate Now</button>
                 </div>
@@ -130,4 +145,5 @@
     </div>
 
 </body>
+
 </html>
