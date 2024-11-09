@@ -14,28 +14,20 @@ const addMoney = document.getElementById('btn-donation')
         document.getElementById('card-available-balance').innerText = newCardBalance;
        
 
+        // INPUT VALIDATION FOR CARD-1
 
         if(addInputMoney<=0 || isNaN(addInputMoney)){
             document.getElementById('invalid-1').classList.remove('hidden')
             document.getElementById('card-available-balance').classList.add('hidden')
             return;
         }
-      
+    // For Positive Number-Card-2
+        if(addInputMoney>0 || NaN(addInputMoney)){
+            document.getElementById('invalid-1').classList.add('hidden')
+            document.getElementById('card-available-balance').classList.remove('hidden')
+            return;
+        }
     })
-
-  
-
-
-// error handaling for card-1
-// document.getElementById('ammount-input')
-// .addEventListener('input',function(){
-//     if (newCardBalance <=0 || isNaN(newCardBalance)){
-//     const cardErro1=InputValidation('invalid-1').classList.remove('hidden')
-//        return;
-//     }
-    
-// })
-
 
 
 
@@ -54,9 +46,26 @@ const addMoney2 = document.getElementById('btn-donation2')
         document.getElementById('card-available-balance2').innerText = newCardBalance2;
         FormateCurrency(newCardBalance2);
 
+// INPUT VALIDATION FOR CARD-2
+if(addInputMoney2 <=0 || isNaN(addInputMoney2)){
+    document.getElementById('invalid-2').classList.remove('hidden')
+    document.getElementById('card-available-balance2').classList.add('hidden')
+    return;
+}
+
+// For Positive Number-Card-2
+
+if(addInputMoney2>0 || NaN(addInputMoney2)){
+    document.getElementById('invalid-2').classList.add('hidden')
+    document.getElementById('card-available-balance2').classList.remove('hidden')
+    return;
+}
+
+
+        
     })
 
-    // for card 1
+    // for card-3
 const addMoney3 = document.getElementById('btn-donation3')
     .addEventListener('click', function () {
         // console.log("donate button working properly");
@@ -70,6 +79,24 @@ const addMoney3 = document.getElementById('btn-donation3')
         console.log(newCardBalance3);
         document.getElementById('card-available-balance3').innerText = newCardBalance3;
         FormateCurrency(newCardBalance3);
+
+
+
+// INPUT VALIDAION FOR CARD-3
+
+if(addInputMoney3 <=0 || isNaN(addInputMoney3)){
+    document.getElementById('invalid-3').classList.remove('hidden')
+    document.getElementById('card-available-balance3').classList.add('hidden')
+    return;
+}
+
+// For Positive Number-Card-3
+
+if(addInputMoney3>0 || NaN(addInputMoney3)){
+    document.getElementById('invalid-3').classList.add('hidden')
+    document.getElementById('card-available-balance3').classList.remove('hidden')
+    return;
+}
 
     })
 
