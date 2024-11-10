@@ -12,7 +12,21 @@ const addMoney = document.getElementById('btn-donation')
         const newCardBalance = addInputMoney + cardAvailableBalance;
         console.log(newCardBalance);
         document.getElementById('card-available-balance').innerText = newCardBalance;
-       
+
+
+    // Add Input Ammount In Main Balance For Card-1
+
+
+const mainBalance=getTextFieldid('main-balance')
+console.log(mainBalance);
+const newMainBalance=mainBalance-addInputMoney;
+console.log(newMainBalance);
+
+//Main Balance Show in Display
+document.getElementById('main-balance').innerText=newMainBalance;
+
+
+
 
         // INPUT VALIDATION FOR CARD-1
 
@@ -21,7 +35,7 @@ const addMoney = document.getElementById('btn-donation')
             document.getElementById('card-available-balance').classList.add('hidden')
             return;
         }
-    // For Positive Number-Card-2
+    // For Positive Number-Card-1
         if(addInputMoney>0 || NaN(addInputMoney)){
             document.getElementById('invalid-1').classList.add('hidden')
             document.getElementById('card-available-balance').classList.remove('hidden')
@@ -99,4 +113,7 @@ if(addInputMoney3>0 || NaN(addInputMoney3)){
 }
 
     })
+
+
+
 
