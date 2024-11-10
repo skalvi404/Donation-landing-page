@@ -22,7 +22,7 @@ console.log(mainBalance);
 const newMainBalance=mainBalance-addInputMoney;
 console.log(newMainBalance);
 
-//Main Balance Show in Display
+//Main Balance Show in Display card-1
 document.getElementById('main-balance').innerText=newMainBalance;
 
 
@@ -60,6 +60,18 @@ const addMoney2 = document.getElementById('btn-donation2')
         document.getElementById('card-available-balance2').innerText = newCardBalance2;
         FormateCurrency(newCardBalance2);
 
+
+// Add Input Ammount In Main Balance For Card-2
+
+
+const mainBalance2=getTextFieldid('main-balance')
+console.log(mainBalance2);
+const newMainBalance2=mainBalance2-addInputMoney2;
+console.log(newMainBalance2);
+
+//Main Balance Show in Display card-2
+document.getElementById('main-balance').innerText=newMainBalance2;
+
 // INPUT VALIDATION FOR CARD-2
 if(addInputMoney2 <=0 || isNaN(addInputMoney2)){
     document.getElementById('invalid-2').classList.remove('hidden')
@@ -94,6 +106,17 @@ const addMoney3 = document.getElementById('btn-donation3')
         document.getElementById('card-available-balance3').innerText = newCardBalance3;
         FormateCurrency(newCardBalance3);
 
+
+        // Add Input Ammount In Main Balance For Card-2
+
+
+const mainBalance3=getTextFieldid('main-balance')
+console.log(mainBalance3);
+const newMainBalance3=mainBalance3-addInputMoney3;
+console.log(newMainBalance3);
+
+//Main Balance Show in Display card-2
+document.getElementById('main-balance').innerText=newMainBalance3;
 
 
 // INPUT VALIDAION FOR CARD-3
